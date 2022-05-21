@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Dinosaur" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Dinosaur" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++17" />
+					<Add option="-g" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../../SDL/SDL2_image/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="source/Core" />
+					<Add directory="source/Graph" />
+					<Add directory="source/Physics" />
+					<Add directory="source/Object" />
+					<Add directory="source/Character" />
+					<Add directory="source/Obstacles" />
+					<Add directory="source/Collision" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32-ttf/include/SDL2" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32-mixer/include/SDL2" />
+					<Add directory="source" />
+					<Add directory="./" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_ttf" />
+					<Add option="-lSDL2_mixer" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32/lib" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32/bin" />
+					<Add directory="../../SDL/SDL2_image/x86_64-w64-mingw32/lib" />
+					<Add directory="../../SDL/SDL2_image/x86_64-w64-mingw32/bin" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32-mixer/lib" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32-mixer/bin" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32-ttf/lib" />
+					<Add directory="../../SDL/SDL2/x86_64-w64-mingw32-ttf/bin" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Dinosaur" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="source/Core" />
+					<Add directory="source/Graph" />
+					<Add directory="source/Physics" />
+					<Add directory="source/Object" />
+					<Add directory="source/Character" />
+					<Add directory="source/Obstacles" />
+					<Add directory="source/Collision" />
+					<Add directory="source" />
+					<Add directory="./" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="source/Character/Character.h" />
+		<Unit filename="source/Character/Doctor.cpp" />
+		<Unit filename="source/Character/Doctor.h" />
+		<Unit filename="source/Character/Warrior.cpp" />
+		<Unit filename="source/Character/Warrior.h" />
+		<Unit filename="source/Collision/Collision.cpp" />
+		<Unit filename="source/Collision/Collision.h" />
+		<Unit filename="source/Core/Engine.cpp" />
+		<Unit filename="source/Core/Engine.h" />
+		<Unit filename="source/Graph/Texture.cpp" />
+		<Unit filename="source/Graph/Texture.h" />
+		<Unit filename="source/Object/GameObject.h" />
+		<Unit filename="source/Object/IObject.h" />
+		<Unit filename="source/Obstacles/Obs.cpp" />
+		<Unit filename="source/Obstacles/Obs.h" />
+		<Unit filename="source/Physics/Transform.h" />
+		<Unit filename="source/Physics/Vector2D.h" />
+		<Unit filename="source/sound.cpp" />
+		<Unit filename="source/sound.h" />
+		<Unit filename="source/ttf.cpp" />
+		<Unit filename="source/ttf.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
